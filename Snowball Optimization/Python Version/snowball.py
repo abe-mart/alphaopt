@@ -48,7 +48,7 @@ def snowball_dynamics(w,t,p):
 def objective(m0):
     
     # Load parameters
-    p = [m0,C_d,g,rho,theta,rho_a,beta]
+    p = [K0,C_d,g,rho,theta,rho_a,beta]
     
     # Get initial radius from initial mass
     r0 = (m0/(4/3.0*np.pi*rho))**(1/3.0)
